@@ -16,7 +16,8 @@ library(tidyverse)
 ### In this code chunk, start with the diamonds dataset (built in to
 ### ggplot2 package) and create a plot of price vs. carat (or some other
 ### variables of your choice)
-
+ggplot(data=diamonds,aes(x=carat,y=price))+
+  geom_point()
 
 ```
 
@@ -27,6 +28,7 @@ library(tidyverse)
 
 diamonds_subset <- diamonds %>%
   filter(carat > 1.5 & cut == 'Ideal')
+### resolved merge conflict, hope that's cool
 ```
 
 ## STEP 7: Uh oh, merge conflicts!
