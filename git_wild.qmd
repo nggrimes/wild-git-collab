@@ -13,6 +13,7 @@ execute:
 
 ```{r setup}
 library(tidyverse)
+
 ```
 
 ## STEP 5: No merge conflicts!
@@ -30,7 +31,9 @@ library(tidyverse)
 ### ggplot2 package) and create a subset based on filtering, e.g., 
 ### size greater than 1 carat or cut is "Ideal"
 
-
+ggplot(diamonds, aes(x = carat, y = cut)) +
+  geom_point()
+  
 
 ```
 
