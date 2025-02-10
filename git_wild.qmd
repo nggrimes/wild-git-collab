@@ -42,9 +42,9 @@ ggplot(diamonds, aes(x = carat, y = cut)) +
 ## STEP 7: Uh oh, merge conflicts!
 
 ```{r break-it-1}
-### Both partners - delete this comment, then write some code here
-### to plot, summarize, calculate something simple using the diamonds
-### dataset.
+diamonds |> 
+  group_by(carat) |> 
+  summarize(mean=mean())
 
 
 ```
