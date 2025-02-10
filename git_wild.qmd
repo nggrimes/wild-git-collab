@@ -13,7 +13,6 @@ execute:
 
 ```{r setup}
 library(tidyverse)
-
 ```
 
 ## STEP 5: No merge conflicts!
@@ -46,6 +45,8 @@ ggplot(diamonds, aes(x = carat, y = cut)) +
 ### to plot, summarize, calculate something simple using the diamonds
 ### dataset.
 
+ggplot(diamonds, aes(x = carat, y = table)) +
+  geom_point()
 
 ```
 
