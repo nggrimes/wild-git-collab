@@ -46,6 +46,8 @@ diamonds |>
   group_by(carat) |> 
   summarize(mean=mean())
 
+ggplot(something)
+
 
 ```
 
