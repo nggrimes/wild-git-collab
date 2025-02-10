@@ -13,7 +13,6 @@ execute:
 
 ```{r setup}
 library(tidyverse)
-
 ```
 
 ## STEP 5: No merge conflicts!
@@ -46,7 +45,9 @@ diamonds |>
   group_by(carat) |> 
   summarize(mean=mean())
 
-ggplot(something)
+
+ggplot(diamonds, aes(x = carat, y = table)) +
+  geom_point()
 
 
 ```
